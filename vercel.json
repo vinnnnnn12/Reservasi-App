@@ -5,7 +5,8 @@
     }
   },
   "rewrites": [
+    { "source": "/style.css", "destination": "/style.css" },
     { "source": "/", "destination": "/api/index.php" },
-    { "source": "/(?!style.css)(.*)", "destination": "/api/$1" }
+    { "source": "/(.*)", "destination": "/api/$1" }
   ]
 }
